@@ -19,3 +19,6 @@
     - 'us-central1'
   images:
   - 'gcr.io/$PROJECT_ID/personal-website-service:$COMMIT_SHA'
+
+options:
+  logging: CLOUD_LOGGING_ONLY
