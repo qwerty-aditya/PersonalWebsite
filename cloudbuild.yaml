@@ -1,3 +1,5 @@
+  options:
+    logging: CLOUD_LOGGING_ONLY
   steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
@@ -20,5 +22,3 @@
   images:
   - 'gcr.io/$PROJECT_ID/personal-website-service:$COMMIT_SHA'
 
-options:
-  logging: CLOUD_LOGGING_ONLY
